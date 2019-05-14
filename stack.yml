@@ -6,3 +6,6 @@ functions:
     lang: dockerfile
     handler: ./kubesec
     image: alexellis2/kubesec:latest
+    labels:
+      com.openfaas.scale.zero: false
+
