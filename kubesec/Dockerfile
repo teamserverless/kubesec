@@ -9,7 +9,7 @@ RUN apk --no-cache add curl ca-certificates \
     && chmod +x /usr/bin/fwatchdog \
     && apk del curl
 
-FROM kubesec/kubesec:35b1aba
+FROM kubesec/kubesec:38dc8a5
 
 COPY --from=watchdog /usr/bin/fwatchdog /usr/bin/fwatchdog
 
